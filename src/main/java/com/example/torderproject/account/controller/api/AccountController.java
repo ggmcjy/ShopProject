@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 @RestController
 @RequiredArgsConstructor
 @Slf4j
@@ -19,10 +22,12 @@ public class AccountController {
     private final AccountService accountService;
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody RequestLogin requestLogin) {
+    public ResponseEntity<ResponseLoginApi> login(HttpServletRequest request,
+                                                  HttpServletResponse response,
+                                                  @RequestBody RequestLogin requestLogin) {
         log.info("request data {}, {}",requestLogin.getUsername(), requestLogin.getPassword());
-        ResponseLoginApi responseLoginApi = accountService.login(requestLogin);
-        return ResponseEntity.status(HttpStatus.OK).body("sssss");
+        ResponseLoginApi responseLoginApi = accountService.login(request,response,requestLogin);
+        return ResponseEntity.status(HttpStatus.OK).body(responseLoginApi);
     }
 
 

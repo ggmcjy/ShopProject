@@ -22,8 +22,6 @@ public class Account implements UserDetails{
     private String username;
     private String password;
 
-//    @Enumerated(EnumType.STRING)
-//    private AccountRole role;
 
     @OneToMany(mappedBy = "account")
     private List<Menu> menus = new ArrayList<>();

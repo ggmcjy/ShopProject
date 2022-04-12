@@ -1,7 +1,6 @@
 package com.example.torderproject.account.dto;
 
 import com.example.torderproject.account.jpa.Account;
-import com.example.torderproject.account.jpa.AccountRole;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
