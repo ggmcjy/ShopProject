@@ -21,11 +21,12 @@ public class AccountController {
 
     private final AccountService accountService;
 
+
     @PostMapping("/login")
     public ResponseEntity<ResponseLoginApi> login(HttpServletRequest request,
                                                   HttpServletResponse response,
-                                                  @RequestBody RequestLogin requestLogin) {
-        log.info("request data {}, {}",requestLogin.getUsername(), requestLogin.getPassword());
+                                                  @RequestBody RequestLogin requestLogin) throws Exception {
+
         ResponseLoginApi responseLoginApi = accountService.login(request,response,requestLogin);
         return ResponseEntity.status(HttpStatus.OK).body(responseLoginApi);
     }

@@ -17,7 +17,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
                          AuthenticationException authException) throws IOException, ServletException {
 
         // 인증에 실패한 사용자의 response 에 HttpServletResponse.SC_UNAUTHORIZED 를 담아주도록 구현
-        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "UnAuthorized");
-
+//        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "UnAuthorized");
+        response.sendRedirect("/login");
     }
 }

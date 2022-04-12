@@ -3,5 +3,7 @@ package com.example.torderproject.auth.jpa;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AuthRepository extends JpaRepository<AuthToken, Long> {
-    AuthToken findByUserEmail(String subject);
+    AuthToken findByAccountUsername(String subject);
+
+    AuthToken findByAccountId(Long id);
 }

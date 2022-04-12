@@ -5,7 +5,7 @@ $(document).ready(function(){
     $("#login").click(function(){
         var username = $("#username").val();
         var password = $("#password").val();
-       var loginData = {"username": username, "password":password};
+        var loginData = {"username": username, "password":password};
         $.ajax({
             type: "POST",
             url: "/login",
@@ -14,7 +14,7 @@ $(document).ready(function(){
             success: function(response) {
                 if(response != null) {
                     console.log("yes");
-                    console.log(response);
+//                    window.location.href = "/";
                 }
                 else {
                     console.log("no");

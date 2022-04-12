@@ -11,18 +11,10 @@ public class Menu {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String menuName; //상품 명
+    private String name; //상품 명
     private Integer price; // 상품 가격
 
-    private Integer quantity; //상품 수량
-    private Integer stock; // 상품 재고
-
-    @Lob
-    @Basic(fetch = FetchType.EAGER)
-    private String profileImage; //상품 이미지
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "account_id")
-    private Account account;
-
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "account_id")
+//    private Account account;
 }

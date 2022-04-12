@@ -11,5 +11,5 @@ import javax.servlet.http.HttpServletResponse;
 public interface AccountService {
 
     AccountDto createAccount(RequestNewAccount requestNewAccount);
-    ResponseLoginApi login(HttpServletRequest request, HttpServletResponse response, RequestLogin requestLogin);
+    ResponseLoginApi login(HttpServletRequest request, HttpServletResponse response, RequestLogin requestLogin) throws Exception;
 }

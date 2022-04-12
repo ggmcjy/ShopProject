@@ -1,6 +1,7 @@
 package com.example.torderproject.auth.jpa;
 
 import com.example.torderproject.account.jpa.Account;
+import lombok.Builder;
 import lombok.Getter;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -9,6 +10,7 @@ import java.util.Date;
 
 @Entity
 @Getter
+@Builder
 public class AuthToken {
 
     @Id

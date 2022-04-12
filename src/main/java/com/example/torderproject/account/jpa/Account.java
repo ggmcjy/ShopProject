@@ -2,7 +2,9 @@ package com.example.torderproject.account.jpa;
 
 import com.example.torderproject.account.dto.RequestNewAccount;
 import com.example.torderproject.menu.jpa.Menu;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -13,18 +15,19 @@ import java.util.List;
 
 @Entity
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Account implements UserDetails{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String username;
     private String password;
 
 
-    @OneToMany(mappedBy = "account")
-    private List<Menu> menus = new ArrayList<>();
+//    @OneToMany(mappedBy = "account")
+//    private List<Menu> menus = new ArrayList<>();
 
 
     public Account(RequestNewAccount requestNewAccount) {
@@ -40,21 +43,21 @@ public class Account implements UserDetails{
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
 }
