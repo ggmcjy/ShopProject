@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head th:frgment="head">
     <meta charset="UTF-8">
     <title>TOrder</title>
@@ -12,7 +12,12 @@
         <a class="navbar-brand" th:href="@{/}">Torder-Menu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a th:href="@{/login}" type="button" class="btn btn-outline-dark">로그인</a>
+            <div sec:authorize="!isAuthenticated()">
+                <a th:href="@{/login}" type="button" class="btn btn-outline-dark">로그인</a>
+            </div>
+            <div sec:authorize="isAuthenticated()">
+                <a th:href="@{/logout}" type="button" class="btn btn-outline-dark">로그아웃</a>
+            </div>
             <button class="btn btn-outline-dark ml-2" type="submit">
                 <i class="bi-cart-fill me-1"></i>장바구니<span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
             </button>

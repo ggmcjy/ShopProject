@@ -22,11 +22,6 @@ public class Account implements UserDetails{
     private String username;
     private String password;
 
-
-//    @OneToMany(mappedBy = "account")
-//    private List<Menu> menus = new ArrayList<>();
-
-
     public Account(RequestNewAccount requestNewAccount) {
         this.username = requestNewAccount.getUsername();
         this.password = requestNewAccount.getPassword();

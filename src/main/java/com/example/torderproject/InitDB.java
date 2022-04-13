@@ -26,12 +26,11 @@ public class InitDB {
     static class InitService {
 
         private final AccountService accountService;
-        private final MenuService menuService;
         private final PasswordEncoder passwordEncoder;
 
         private void accountInit() {
             RequestNewAccount requestNewAccount = new RequestNewAccount();
-            requestNewAccount.setUsername("root@asd.com");
+            requestNewAccount.setUsername("root@asd");
             requestNewAccount.setPassword(passwordEncoder.encode("1234"));
             accountService.createAccount(requestNewAccount);
         }

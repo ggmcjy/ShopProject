@@ -13,9 +13,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
-import java.util.Optional;
+
 
 @Slf4j
 @Service
@@ -33,12 +32,16 @@ public class OrderServiceImpl implements OrderService{
 
         Account account = accountService.getAccountId(accountId);
         List<CartItem> cartItems = cartItemRepository.findAllByCartId(cartId);
-        for (CartItem cartItem : cartItems) {
-            Order order = new Order();
-            order.addOrder(account, cartItem);
-            orderRepository.save(order);
-        }
-        cartService.allCartItemDelete(accountId);
 
+        for (CartItem cartItem : cartItems) {
+            orderRepository.save(new Order(account, cartItem));
+        }
+
+        cartService.allCartItemDelete(accountId);
+    }
+
+    @Override
+    public List<Order> paymentAccount(Long accountId) {
+        return orderRepository.findAllByAccountId(accountId);
     }
 }
