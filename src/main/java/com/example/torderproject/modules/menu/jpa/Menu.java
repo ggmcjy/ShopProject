@@ -1,0 +1,30 @@
+package com.example.torderproject.modules.menu.jpa;
+
+import com.example.torderproject.modules.cart.jpa.Cart;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
+@Entity
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Menu {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name; //상품 명
+    private Integer price; // 상품 가격
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="cart_id")
+    private Cart cart;
+
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "account_id")
+//    private Account account;
+}

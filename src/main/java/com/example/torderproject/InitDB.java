@@ -1,8 +1,8 @@
 package com.example.torderproject;
 
-import com.example.torderproject.account.dto.RequestNewAccount;
-import com.example.torderproject.account.service.AccountService;
-import com.example.torderproject.menu.service.MenuService;
+import com.example.torderproject.modules.account.dto.RequestNewAccount;
+import com.example.torderproject.modules.account.service.AccountService;
+import com.example.torderproject.modules.menu.service.MenuService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
