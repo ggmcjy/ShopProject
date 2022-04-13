@@ -22,18 +22,29 @@ public class Cart {
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="account_id")
-    private Account user; // 구매자
+    private Account account; // 구매자
 
     private Integer count; //장바구니 수량
 
     @OneToMany(mappedBy = "cart")
     private List<CartItem> cartItems = new ArrayList<>(); // 장바구니
 
-    public void createCart() {
+
+    public static Cart createCart(Account account) {
+        Cart cart = new Cart();
+        cart.addCart(account);
+        return cart;
+    }
+    private void addCart(Account account) {
+        this.account = account;
         this.count = 0;
     }
 
     public void addCount(Integer count) {
         this.count += count;
+    }
+
+    public void clearCount() {
+        this.count = 0;
     }
 }

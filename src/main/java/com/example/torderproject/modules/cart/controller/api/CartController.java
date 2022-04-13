@@ -19,7 +19,7 @@ public class CartController {
                                          @PathVariable(name = "menuId") Long menuId,
                                          @RequestBody RequestAddCart requestAddCart) {
 
-        cartService.addCart(accountId,menuId, requestAddCart);
+        cartService.addCart(accountId, menuId, requestAddCart);
         return ResponseEntity
                 .status(HttpStatus.CREATED).build();
     }

@@ -41,13 +41,12 @@ public class CartItem {
         this.count = count;
     }
 
-    public void update(Cart savedCart, Menu menu, int count) {
+    public void update(Cart savedCart, Menu menu, Integer count) {
         this.cart = savedCart;
         this.menu = menu;
-        this.count += count;
+        this.count+=count;
+        System.out.println("count = " + this.count);
     }
 
-    public void addCount(Integer count) {
-        this.count += count;
-    }
+
 }

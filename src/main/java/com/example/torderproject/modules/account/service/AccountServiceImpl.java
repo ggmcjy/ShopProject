@@ -111,5 +111,10 @@ public class AccountServiceImpl implements AccountService{
 
     }
 
+    @Override
+    public Account getAccountId(Long accountId) {
+        return accountRepository.findById(accountId).orElseThrow(() -> new UsernameNotFoundException("Account Id Not Found"));
+    }
+
 
 }
