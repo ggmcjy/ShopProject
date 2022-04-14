@@ -12,6 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.web.AuthenticationEntryPoint;
 
 @Configuration
 @EnableWebSecurity
@@ -29,29 +30,34 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable();
         http
                 .headers().frameOptions().disable();
 
         http
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) //token 인증 이므로 session STATELESS 치리
-                .and()
                 .authorizeRequests()
                 .antMatchers("/").permitAll()
                 .antMatchers("/login/**").permitAll()
+                .antMatchers("/menu/**").permitAll()
                 .antMatchers("/h2-console/**").permitAll()
-                .anyRequest().authenticated();
+                .anyRequest().authenticated()
+                .and()
+                .exceptionHandling()
+                .authenticationEntryPoint(ajaxAwareAuthenticationEntryPoint("/login"));
 
         http
                 .formLogin()
-                .loginPage("/login"); //인증 필요시 로그인 페이지
-//                .defaultSuccessUrl("/", true) //로그인 성공시 리다이랙팅 경로
-//                .loginProcessingUrl("/login") // 로그인이 수행될 uri 매핑 (post 요청)
-//                .defaultSuccessUrl("/", true);
+                .loginPage("/login") //인증 필요시 로그인 페이지
+                .defaultSuccessUrl("/", true);//로그인 성공시 리다이랙팅 경로
 
         http.logout()
                 .logoutSuccessUrl("/");
 
 //        http.userDetailsService(userDetailsService);
+    }
+
+    private AuthenticationEntryPoint ajaxAwareAuthenticationEntryPoint(String url) {
+        return new AjaxAwareAuthenticationEntryPoint(url);
     }
 
     @Bean

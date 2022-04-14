@@ -3,6 +3,7 @@ package com.example.torderproject.modules.cart.service;
 import com.example.torderproject.modules.account.jpa.Account;
 import com.example.torderproject.modules.account.service.AccountService;
 import com.example.torderproject.modules.cart.dto.RequestAddCart;
+import com.example.torderproject.modules.cart.dto.ResponseCart;
 import com.example.torderproject.modules.cart.jpa.Cart;
 import com.example.torderproject.modules.cart.jpa.CartItem;
 import com.example.torderproject.modules.cart.jpa.CartItemRepository;
@@ -16,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Transactional
@@ -30,10 +32,8 @@ public class CartServiceImpl implements CartService{
 
     @Override
     public void addCart(Long accountId, Long menuId, RequestAddCart requestAddCart) {
-
         // 유저 id로 해당 유저의 장바구니 찾기
         Cart cart = cartRepository.findByAccountId(accountId);
-
         // 장바구니가 존재하지 않는다면
         if (cart == null) {
             Account account = accountService.getAccountId(accountId);
@@ -52,7 +52,6 @@ public class CartServiceImpl implements CartService{
             cartItemRepository.save(cartItem);
         }
         cart.addCount(requestAddCart.getCount()); // 장바구니 총개수
-
     }
 
     @Override
@@ -66,4 +65,11 @@ public class CartServiceImpl implements CartService{
             }
         }
     }
+
+    @Override
+    public ResponseCart CartMenuByAccountId(Account account) {
+        Cart carts = cartRepository.findByAccountId(account.getId());
+        return new ResponseCart(carts);
+    }
+
 }

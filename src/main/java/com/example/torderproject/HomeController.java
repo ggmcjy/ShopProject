@@ -17,4 +17,13 @@ public class HomeController {
         return "accounts/login";
     }
 
+    @GetMapping("/cart-list")
+    public String cart() {
+        return "cart/cart-list";
+    }
+
+    @GetMapping("/payment-page")
+    public String payment() {
+        return "payment/payment-page";
+    }
 }

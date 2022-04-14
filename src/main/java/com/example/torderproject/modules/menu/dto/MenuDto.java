@@ -1,5 +1,6 @@
 package com.example.torderproject.modules.menu.dto;
 
+import com.example.torderproject.modules.cart.jpa.CartItem;
 import com.example.torderproject.modules.menu.jpa.Menu;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,4 +20,6 @@ public class MenuDto {
         this.name = m.getName();
         this.price = m.getPrice();
     }
+
+
 }

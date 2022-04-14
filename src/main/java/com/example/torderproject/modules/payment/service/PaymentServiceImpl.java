@@ -11,7 +11,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -28,7 +27,7 @@ public class PaymentServiceImpl implements PaymentService{
     public void payment(Long accountId) {
 
         Account account = accountService.getAccountId(accountId);
-        List<Order> orders = orderService.paymentAccount(accountId);
+        List<Order> orders = orderService.getOrderAccountId(accountId);
 
         Integer totalPayment = 0;
         Integer totalCount = 0;
@@ -39,5 +38,6 @@ public class PaymentServiceImpl implements PaymentService{
         System.out.println("totalPayment = " + totalPayment);
         System.out.println("totalCount = " + totalCount);
         paymentRepository.save(new Payment(account, totalPayment, totalCount));
+        orderService.deleteAll(account.getId());
     }
 }

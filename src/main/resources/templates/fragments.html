@@ -17,10 +17,10 @@
             </div>
             <div sec:authorize="isAuthenticated()">
                 <a th:href="@{/logout}" type="button" class="btn btn-outline-dark">로그아웃</a>
+                <a th:href="@{/cart-list}" class="btn btn-outline-dark ml-2" type="submit"><i class="bi-cart-fill me-1"></i>장바구니</a>
+                <a th:href="@{/payment-page}" class="btn btn-outline-dark ml-2" type="submit"><i class="bi-cart-fill me-1"></i>결제 페이지</a>
             </div>
-            <button class="btn btn-outline-dark ml-2" type="submit">
-                <i class="bi-cart-fill me-1"></i>장바구니<span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-            </button>
+
         </div>
     </div>
 </nav>

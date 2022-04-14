@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments.html :: head"></head>
+
+<body>
+<nav th:replace="fragments.html :: main-nav"></nav>
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div id="container" class="justify-content-center">
+            <h2>장바구니</h2>
+            <h3><code>총 가격</code></h3>
+            <h3><span id="total-price"></span></h3>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>메뉴명</th>
+                    <th>가격</th>
+                    <th>갯수</th>
+                </tr>
+                </thead>
+                <tbody id="cart-table-body">
+                </tbody>
+            </table>
+            <div id="order-submit">
+            </div>
+
+        </div>
+    </div>
+</section>
+<script src="js/cart.js"></script>
+</body>
+</html>

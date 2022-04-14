@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments.html :: head"></head>
+<body>
+    <nav th:replace="fragments.html :: main-nav"></nav>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div id="container" class="justify-content-center">
+                <h4 class="mt-2">
+                    <span sec:authentication="name"></span> 님 결제목록
+                </h4>
+                <h5>총 가격</h5>
+                <h5><span id="total-payment-price"></span></h5>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>메뉴명</th>
+                        <th>가격</th>
+                        <th>갯수</th>
+                    </tr>
+                    </thead>
+                    <tbody id="payment-order-body">
+                    </tbody>
+                </table>
+                <div id="payment-submit">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/payment.js"></script>
+</body>
+</html>

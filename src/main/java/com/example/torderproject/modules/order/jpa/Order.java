@@ -38,5 +38,7 @@ public class Order {
         this.menuTotalPrice = cartItem.getMenu().getPrice() * cartItem.getCount();
     }
 
-
+    public void menuCountUp(CartItem cartItem) {
+        this.menuCount += cartItem.getCount();
+    }
 }
