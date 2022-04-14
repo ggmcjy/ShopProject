@@ -16,7 +16,7 @@ $(document).ready(function(){
                     block += "<div class='card-body p-4'>"
                     block += "<div class='text-center'>"
                     block += "<h5 class='fw-bolder'>"+list[i].name+"</h5>"
-                    block += "<span>" + list[i].price + "</span>"
+                    block += "<span>"+list[i].price+"원</span>"
                     block += "</div>"
                     block +="</div>"
                     block +="<div class='card-footer p-4 pt-0 border-top-0 bg-transparent'>"

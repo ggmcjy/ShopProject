@@ -18,8 +18,8 @@ spring:
     username: sa
 
 #JWT
-jwt:
-  secret-key: returnbliss-key
-  access-token-expire-length: 1800000  #30 * 60 * 1000L 30? 1800000
-  refresh-token-expire-length: 1209600000  #60 * 60 * 24 * 14 * 1000L; 2?
-  header-name: 'Bearer'
+#jwt:
+#  secret-key: returnbliss-key
+#  access-token-expire-length: 1800000  #30 * 60 * 1000L 30? 1800000
+#  refresh-token-expire-length: 1209600000  #60 * 60 * 24 * 14 * 1000L; 2?
+#  header-name: 'Bearer'
