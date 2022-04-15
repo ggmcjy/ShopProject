@@ -28,12 +28,28 @@
 
 - account 
 
-<img width="200" alt="스크린샷 2022-04-15 오후 2 39 02" src="https://user-images.githubusercontent.com/53418465/163526286-b311fc91-5c81-431a-8ee7-8a48f0426069.png">
+  <img width="400" alt="스크린샷 2022-04-15 오후 2 39 02" src="https://user-images.githubusercontent.com/53418465/163526286-b311fc91-5c81-431a-8ee7-8a48f0426069.png">
+
+- menu
+  
+  <img width="546" alt="스크린샷 2022-04-15 오후 2 39 53" src="https://user-images.githubusercontent.com/53418465/163526482-facbda50-40c0-4419-ae61-ec5303f37bf0.png">
 
 - cart
 
-<img width="200" alt="스크린샷 2022-04-15 오후 2 39 20" src="https://user-images.githubusercontent.com/53418465/163526316-77eac044-5b83-495c-bfce-a47a0d8e19f9.png">
+  <img width="400" alt="스크린샷 2022-04-15 오후 2 39 20" src="https://user-images.githubusercontent.com/53418465/163526316-77eac044-5b83-495c-bfce-a47a0d8e19f9.png">
 
+- cartItem
+  
+  <img width="400" alt="스크린샷 2022-04-15 오후 2 39 34" src="https://user-images.githubusercontent.com/53418465/163526381-71a00978-533d-444e-9bf1-bd61fcec768a.png">
+  
+- order
+
+  <img width="459" alt="스크린샷 2022-04-15 오후 2 40 17" src="https://user-images.githubusercontent.com/53418465/163526507-0ad8ba68-90ca-4033-af00-de978e7be777.png">
+
+- payment
+  
+  <img width="492" alt="스크린샷 2022-04-15 오후 2 40 34" src="https://user-images.githubusercontent.com/53418465/163526616-84651531-9dc4-45c7-8536-840f87975a0e.png">
+  
 
 2.첫 등록 데이터베이스 작업 
 
