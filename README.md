@@ -18,6 +18,10 @@
 
 <img width="600" alt="스크린샷 2022-04-15 오후 1 42 21" src="https://user-images.githubusercontent.com/53418465/163519503-e6b5658b-3470-4176-b897-fbfbd9616246.png">
 
+<h5>패키지 구성도</h5>
+
+<img width="467" alt="스크린샷 2022-04-15 오후 1 50 00" src="https://user-images.githubusercontent.com/53418465/163519938-033f5a69-da91-4bef-9d54-15291c1d95b5.png">
+
 
 <h3>2. 실행코드 및 화면</h3>
 
