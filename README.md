@@ -77,10 +77,12 @@ data.sql
 <img width="650" alt="스크린샷 2022-04-15 오후 2 23 19" src="https://user-images.githubusercontent.com/53418465/163524683-c3c7ed0d-b618-48d3-8743-94cacd28c594.png">
 
 - 권한이 필요없는 url 들은 permitAll() 로 지정해 주었고 나머지느 로그인 인증을 통해 접속이 가능하게 하였다.
-- exceptionHandling().authenticationEntryPoint(ajaxAwareAuthenticationEntryPoint("/login")) 부분은 ajax 통신을 통한 웹형식으로 되어있어 인증이 거치지 않은\n
+- exceptionHandling().authenticationEntryPoint(ajaxAwareAuthenticationEntryPoint("/login")) 부분은 ajax 통신을 통한 웹형식으로 되어있어 인증이 거치지 않은
 유저는 403 status 를 보내 로그인 페이지로 이동 시키는 필터기능을 하고있다.
 <img width="650" alt="스크린샷 2022-04-15 오후 2 31 46" src="https://user-images.githubusercontent.com/53418465/163525530-59c13487-3b6e-43c4-be72-541917ce6a6b.png">
 <img width="650" alt="스크린샷 2022-04-15 오후 2 31 00" src="https://user-images.githubusercontent.com/53418465/163525431-fb1c2c27-8b9b-43d3-9571-984c7f901505.png">
+
+
 
     
     
