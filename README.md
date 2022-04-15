@@ -20,10 +20,10 @@
 
 <h5>프로젝트 패키지 구성도</h5>
 
-<img width="467" alt="스크린샷 2022-04-15 오후 1 50 00" src="https://user-images.githubusercontent.com/53418465/163519938-033f5a69-da91-4bef-9d54-15291c1d95b5.png">
+<img width="350" alt="스크린샷 2022-04-15 오후 2 19 18" src="https://user-images.githubusercontent.com/53418465/163524333-d6d9ed6d-48e3-4760-a113-ad62196d4547.png">
 
 
-<h3>2. 실행코드 및 화면</h3>
+<h3>2.실행코드 및 화면</h3>
 
 1.첫 등록 데이터베이스 작업 
 
@@ -44,6 +44,17 @@ data.sql
 <img width="334" alt="스크린샷 2022-04-15 오후 1 55 45" src="https://user-images.githubusercontent.com/53418465/163520708-b8586f00-5415-4d6b-a80a-000e3969207b.png">
 
 메뉴에 대한 데이터들도 InitDB 에서 insert 할려 했으나 sql을 통한 db insert 로 하는 방법도 같이 구현 해보고 싶었다.
+
+
+2. security 
+
+<img width="742" alt="스크린샷 2022-04-15 오후 2 23 19" src="https://user-images.githubusercontent.com/53418465/163524683-c3c7ed0d-b618-48d3-8743-94cacd28c594.png">
+
+- 권한이 필요없는 url 들은 permitAll() 로 지정해 주었고 나머지느 로그인 인증을 통해 접속이 가능하게 하였다.
+- exceptionHandling().authenticationEntryPoint(ajaxAwareAuthenticationEntryPoint("/login")) 부분은 ajax 통신을 통한 웹형식으로 되어있어 인증이 거치지 않은\n
+유저는 403 status 를 보내 로그인 페이지로 이동 시키는 필터기능을 하고있다.
+  
+
 
 
     
