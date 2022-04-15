@@ -33,11 +33,18 @@ IninDB.class
 
 <img width="680" alt="스크린샷 2022-04-15 오후 1 52 24" src="https://user-images.githubusercontent.com/53418465/163520486-ac9b8b97-c49c-4dd1-bdc7-8ccfe1ee2c0f.png">
 
+@PostConstruct
+WAS가 올라가면서 bean이 생성될 때 딱 한 번 초기화함
+bean lifecycle에서 오직 한 번만 수행된다는 것을 보장할 수 있다. 
+
 메뉴 10개 등록 
 
 data.sql
 
 <img width="334" alt="스크린샷 2022-04-15 오후 1 55 45" src="https://user-images.githubusercontent.com/53418465/163520708-b8586f00-5415-4d6b-a80a-000e3969207b.png">
+
+메뉴에 대한 데이터들도 InitDB 에서 insert 할려 했으나 sql을 통한 db insert 로 하는 방법도 같이 구현 해보고 싶었다.
+
 
     
     
