@@ -115,10 +115,9 @@ data.sql
 - 결제 완료 code
 
   <img width="603" alt="스크린샷 2022-04-15 오후 2 53 09" src="https://user-images.githubusercontent.com/53418465/163527362-3df4483f-794d-435b-bf51-8b44dd8b6423.png">
-
+  
 
 <h3>3.실행 동영상</h3>
-
 
 
 
