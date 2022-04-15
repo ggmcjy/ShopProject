@@ -16,12 +16,11 @@
 
 <h5>Database 테이블 다이어그램</h5>
 
-<img width="600" alt="스크린샷 2022-04-15 오후 1 42 21" src="https://user-images.githubusercontent.com/53418465/163519503-e6b5658b-3470-4176-b897-fbfbd9616246.png">
+<img width="650" alt="스크린샷 2022-04-15 오후 1 42 21" src="https://user-images.githubusercontent.com/53418465/163519503-e6b5658b-3470-4176-b897-fbfbd9616246.png">
 
 <h5>프로젝트 패키지 구성도</h5>
 
-<img width="350" alt="스크린샷 2022-04-15 오후 2 19 18" src="https://user-images.githubusercontent.com/53418465/163524333-d6d9ed6d-48e3-4760-a113-ad62196d4547.png">
-
+<img width="312" alt="스크린샷 2022-04-15 오후 2 33 17" src="https://user-images.githubusercontent.com/53418465/163525630-7936015f-4f29-4ed6-a616-a548d7ebf606.png">
 
 <h3>2.실행코드 및 화면</h3>
 
@@ -31,7 +30,7 @@
 
 IninDB.class
 
-<img width="680" alt="스크린샷 2022-04-15 오후 1 52 24" src="https://user-images.githubusercontent.com/53418465/163520486-ac9b8b97-c49c-4dd1-bdc7-8ccfe1ee2c0f.png">
+<img width="650" alt="스크린샷 2022-04-15 오후 1 52 24" src="https://user-images.githubusercontent.com/53418465/163520486-ac9b8b97-c49c-4dd1-bdc7-8ccfe1ee2c0f.png">
 
 @PostConstruct
 WAS가 올라가면서 bean이 생성될 때 딱 한 번 초기화함
@@ -48,14 +47,13 @@ data.sql
 
 2. security 
 
-<img width="742" alt="스크린샷 2022-04-15 오후 2 23 19" src="https://user-images.githubusercontent.com/53418465/163524683-c3c7ed0d-b618-48d3-8743-94cacd28c594.png">
+<img width="650" alt="스크린샷 2022-04-15 오후 2 23 19" src="https://user-images.githubusercontent.com/53418465/163524683-c3c7ed0d-b618-48d3-8743-94cacd28c594.png">
 
 - 권한이 필요없는 url 들은 permitAll() 로 지정해 주었고 나머지느 로그인 인증을 통해 접속이 가능하게 하였다.
 - exceptionHandling().authenticationEntryPoint(ajaxAwareAuthenticationEntryPoint("/login")) 부분은 ajax 통신을 통한 웹형식으로 되어있어 인증이 거치지 않은\n
 유저는 403 status 를 보내 로그인 페이지로 이동 시키는 필터기능을 하고있다.
-
-<img width="809" alt="스크린샷 2022-04-15 오후 2 29 59" src="https://user-images.githubusercontent.com/53418465/163525318-71dac1ac-d976-42ae-835b-d755408d29c6.png">
-<img width="851" alt="스크린샷 2022-04-15 오후 2 31 00" src="https://user-images.githubusercontent.com/53418465/163525431-fb1c2c27-8b9b-43d3-9571-984c7f901505.png">
+<img width="650" alt="스크린샷 2022-04-15 오후 2 31 46" src="https://user-images.githubusercontent.com/53418465/163525530-59c13487-3b6e-43c4-be72-541917ce6a6b.png">
+<img width="650" alt="스크린샷 2022-04-15 오후 2 31 00" src="https://user-images.githubusercontent.com/53418465/163525431-fb1c2c27-8b9b-43d3-9571-984c7f901505.png">
 
     
     
