@@ -15,6 +15,9 @@ Database 테이블
 
 테이블 설계도 
 
+<img width="837" alt="스크린샷 2022-04-15 오후 1 42 21" src="https://user-images.githubusercontent.com/53418465/163519503-e6b5658b-3470-4176-b897-fbfbd9616246.png">
+
+
 
 
 2. 실행코드 및 화면 
