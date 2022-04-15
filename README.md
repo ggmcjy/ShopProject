@@ -22,10 +22,14 @@
 
 <img width="312" alt="스크린샷 2022-04-15 오후 2 33 17" src="https://user-images.githubusercontent.com/53418465/163525630-7936015f-4f29-4ed6-a616-a548d7ebf606.png">
 
+
 <h5>서비스 흐름</h5>
+
 - 로그인 -> 장바구니 담기 -> 주문 -> 주문한 장바구니 목록 삭제 -> 결제 -> 주문한 목록들 삭제
 
-<h3>2.실행코드 및 화면</h3>
+
+
+<h3>2.실행코드</h3>
 
 1.entity 클래스
 
@@ -112,6 +116,8 @@ data.sql
 
   <img width="603" alt="스크린샷 2022-04-15 오후 2 53 09" src="https://user-images.githubusercontent.com/53418465/163527362-3df4483f-794d-435b-bf51-8b44dd8b6423.png">
 
+
+<h3>3.실행 동영상</h3>
 
 
 
