@@ -24,7 +24,18 @@
 
 <h3>2.실행코드 및 화면</h3>
 
-1.첫 등록 데이터베이스 작업 
+1.entity 클래스
+
+- account 
+
+<img width="200" alt="스크린샷 2022-04-15 오후 2 39 02" src="https://user-images.githubusercontent.com/53418465/163526286-b311fc91-5c81-431a-8ee7-8a48f0426069.png">
+
+- cart
+
+<img width="200" alt="스크린샷 2022-04-15 오후 2 39 20" src="https://user-images.githubusercontent.com/53418465/163526316-77eac044-5b83-495c-bfce-a47a0d8e19f9.png">
+
+
+2.첫 등록 데이터베이스 작업 
 
 로그인/로그아웃에 필요한 User 등록
 
@@ -45,7 +56,7 @@ data.sql
 메뉴에 대한 데이터들도 InitDB 에서 insert 할려 했으나 sql을 통한 db insert 로 하는 방법도 같이 구현 해보고 싶었다.
 
 
-2. security 
+3. security 
 
 <img width="650" alt="스크린샷 2022-04-15 오후 2 23 19" src="https://user-images.githubusercontent.com/53418465/163524683-c3c7ed0d-b618-48d3-8743-94cacd28c594.png">
 
