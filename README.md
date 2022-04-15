@@ -119,6 +119,6 @@ data.sql
 
 <h3>3.실행 동영상</h3>
 
-
+https://youtu.be/mm-T6Y7YX6o
 
 
