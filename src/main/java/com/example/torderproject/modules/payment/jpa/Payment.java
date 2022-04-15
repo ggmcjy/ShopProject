@@ -23,6 +23,9 @@ public class Payment {
     private Integer totalCount; // 총 결제 수량
     private Integer totalPayment; //총 결제 금액
 
+
+
+
     public Payment(Account account,Integer totalPayment, Integer totalCount) {
         this.account = account;
         this.totalCount = totalCount;

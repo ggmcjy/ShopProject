@@ -22,6 +22,12 @@ public class Account implements UserDetails{
     private String username;
     private String password;
 
+
+
+
+
+
+
     public Account(RequestNewAccount requestNewAccount) {
         this.username = requestNewAccount.getUsername();
         this.password = requestNewAccount.getPassword();

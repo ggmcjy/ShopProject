@@ -1,4 +1,4 @@
-package com.example.torderproject.modules.payment.controller;
+package com.example.torderproject.modules.payment.controller.api;
 
 import com.example.torderproject.modules.account.jpa.Account;
 import com.example.torderproject.modules.payment.service.PaymentService;

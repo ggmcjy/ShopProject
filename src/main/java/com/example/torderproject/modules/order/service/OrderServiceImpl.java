@@ -37,7 +37,6 @@ public class OrderServiceImpl implements OrderService{
         List<CartItem> cartItems = cartItemRepository.findAllByCartId(cartId);
 
         List<Order> orders = getOrderAccountId(accountId);
-        System.out.println("orders.size() = " + orders.size());
         if (orders.size() == 0) {
             for (CartItem cartItem : cartItems) {
                 Order order = new Order(account, cartItem);

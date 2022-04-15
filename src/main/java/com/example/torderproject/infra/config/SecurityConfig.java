@@ -1,6 +1,5 @@
 package com.example.torderproject.infra.config;
 
-import com.example.torderproject.modules.account.service.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
@@ -53,17 +52,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.logout()
                 .logoutSuccessUrl("/");
 
-//        http.userDetailsService(userDetailsService);
     }
 
     private AuthenticationEntryPoint ajaxAwareAuthenticationEntryPoint(String url) {
         return new AjaxAwareAuthenticationEntryPoint(url);
-    }
-
-    @Bean
-    @Override
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean();
     }
 
 }
