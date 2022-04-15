@@ -83,8 +83,31 @@ data.sql
 <img width="650" alt="스크린샷 2022-04-15 오후 2 31 00" src="https://user-images.githubusercontent.com/53418465/163525431-fb1c2c27-8b9b-43d3-9571-984c7f901505.png">
 
 
+4. cart service code 
 
-    
-    
+- 장바구니 담기 code 
+  <img width="741" alt="스크린샷 2022-04-15 오후 2 48 19" src="https://user-images.githubusercontent.com/53418465/163526954-11290103-6d65-41a0-a92f-c7ff9b9d4299.png">
+
+- 장바구니 삭제 code 
+  <img width="592" alt="스크린샷 2022-04-15 오후 2 49 20" src="https://user-images.githubusercontent.com/53418465/163527035-164d899f-e326-41b6-9111-16e6c26a3407.png">
+
+5. order service code 
+
+- 주문 완료 code 
+  <img width="596" alt="스크린샷 2022-04-15 오후 2 50 51" src="https://user-images.githubusercontent.com/53418465/163527154-37bce9c3-0c12-4d1a-90a8-048710f391da.png">
+
+- 주문 삭제 code
+  <img width="423" alt="스크린샷 2022-04-15 오후 2 52 07" src="https://user-images.githubusercontent.com/53418465/163527259-c3d63887-3edd-4de5-af7a-9856452856f4.png">
+
+6. payment service code 
+
+- 결제 완료 code
+  <img width="603" alt="스크린샷 2022-04-15 오후 2 53 09" src="https://user-images.githubusercontent.com/53418465/163527362-3df4483f-794d-435b-bf51-8b44dd8b6423.png">
+
+
+
+
+
+
 
 
