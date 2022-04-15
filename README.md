@@ -104,7 +104,7 @@ data.sql
 
 - 주문 완료 code 
 
-  <img width="596" alt="스크린샷 2022-04-15 오후 2 50 51" src="https://user-images.githubusercontent.com/53418465/163527154-37bce9c3-0c12-4d1a-90a8-048710f391da.png">
+  <img width="627" alt="스크린샷 2022-04-15 오후 6 12 09" src="https://user-images.githubusercontent.com/53418465/163551914-6fb48cce-e9f2-4c17-8193-2290ad9637b8.png">
 
 - 주문 삭제 code
 
@@ -115,11 +115,8 @@ data.sql
 - 결제 완료 code
 
   <img width="603" alt="스크린샷 2022-04-15 오후 2 53 09" src="https://user-images.githubusercontent.com/53418465/163527362-3df4483f-794d-435b-bf51-8b44dd8b6423.png">
-
+  
 
 <h3>3.실행 동영상</h3>
-
-
-
 
 
