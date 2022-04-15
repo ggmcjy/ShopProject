@@ -8,11 +8,11 @@
 
 <h5>Database 테이블</h5>
 
-1. 회원 (Account)
-2. 메뉴 (Menu)
-3. 장바구니 (Cart, CartItem)
-4. 주문 (Order)
-5. 결제 (Payment)
+- 회원 (Account)
+- 메뉴 (Menu)
+- 장바구니 (Cart, CartItem)
+- 주문 (Order)
+- 결제 (Payment)
 
 <h5>Database 테이블 다이어그램</h5>
 
