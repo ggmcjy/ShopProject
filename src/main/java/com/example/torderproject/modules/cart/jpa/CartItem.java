@@ -41,7 +41,9 @@ public class CartItem {
         this.count = count;
     }
 
-    public void update(Integer count) {
+    public void update(Cart cart, Menu menu, Integer count) {
+        this.cart = cart;
+        this.menu = menu;
         this.count+=count;
     }
 

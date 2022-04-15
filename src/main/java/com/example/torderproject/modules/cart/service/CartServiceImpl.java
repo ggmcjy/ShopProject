@@ -48,7 +48,7 @@ public class CartServiceImpl implements CartService{
             cartItem = CartItem.createCartItem(cart, menu, requestAddCart.getCount());
             cartItemRepository.save(cartItem);
         } else {
-            cartItem.update(requestAddCart.getCount()); // 장바구니 변경감지 (수량 변경)
+            cartItem.update(cart, menu, requestAddCart.getCount()); // 장바구니 변경감지 (수량 변경)
         }
         cart.addCount(requestAddCart.getCount()); // 장바구니 총개수
     }

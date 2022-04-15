@@ -13,7 +13,7 @@ $(document).ready(function(){
                 totalCount += orderData[i].menuPrice * orderData[i].menuCount;
                 orderBlock += "<tr>"
                 orderBlock += "<td>" +orderData[i].menuName + "</td>"
-                orderBlock +="<td>" +orderData[i].menuPrice + "</td>"
+                orderBlock +="<td>" +orderData[i].menuPrice * orderData[i].menuCount+ "</td>"
                 orderBlock +="<td>" +orderData[i].menuCount+ "</td>"
                 orderBlock += "</tr>"
             });
