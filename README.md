@@ -2,9 +2,9 @@
 
 <h4>1. 설계도 </h4>
 
-front = html,js,jquery,bootstrap
-back = jpa, spring boot
-DB = H2-Database
+- front = html,js,jquery,bootstrap
+- back = jpa, spring boot
+- DB = H2-Database
 
 <h5>Database 테이블</h5>
 
