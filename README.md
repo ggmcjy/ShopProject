@@ -53,11 +53,10 @@ data.sql
 - 권한이 필요없는 url 들은 permitAll() 로 지정해 주었고 나머지느 로그인 인증을 통해 접속이 가능하게 하였다.
 - exceptionHandling().authenticationEntryPoint(ajaxAwareAuthenticationEntryPoint("/login")) 부분은 ajax 통신을 통한 웹형식으로 되어있어 인증이 거치지 않은\n
 유저는 403 status 를 보내 로그인 페이지로 이동 시키는 필터기능을 하고있다.
-  
 
+<img width="809" alt="스크린샷 2022-04-15 오후 2 29 59" src="https://user-images.githubusercontent.com/53418465/163525318-71dac1ac-d976-42ae-835b-d755408d29c6.png">
+<img width="851" alt="스크린샷 2022-04-15 오후 2 31 00" src="https://user-images.githubusercontent.com/53418465/163525431-fb1c2c27-8b9b-43d3-9571-984c7f901505.png">
 
-
-    
     
     
 
