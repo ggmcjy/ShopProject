@@ -1,4 +1,4 @@
-# 티오더 과제
+# toyProject shopProject
 
 <h3>1. 설계도 </h3>
 
